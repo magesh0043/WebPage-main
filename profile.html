@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+        <h1 style="color: #021932;">User Profile</h1>
+    </center>
+        <table id="display" style="width:100%">
+            <tr>
+                <th>Firstname:</th>
+                <td>
+                    <div id="fname" class="data" contenteditable="true"></div>
+                </td>
+                <th>Lastname:</th>
+                <td>
+                    <div id="lname" class="data" contenteditable="true"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td>
+                    <div id="age" class="data" contenteditable="true"></div>
+                </td>
+                <th>Gender:</th>
+                <td>
+                    <div>
+                        <select id="gender" class="data">
+                            <option value="-" style="color: rgb(165, 165, 165);">Select</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="na">Doesn't want to specify</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Mailid:</th>
+                <td>
+                    <input id="mailid" class="data" >
+                </td>
+                <th>Mobile No:</th>
+                <td>
+                    <input id="mobile" class="data" >
+                </td>
+            </tr>
+            <tr>
+                <th>DOB:</th>
+                <td>
+                    <input type="date" class="data" id="dob">
+                </td>
+                <td>
+                    <div class="status" id="status"></div>
+                </td>
+            </tr>
+        </table>
+        <div class="button-container">
+            <button id="edit-btn" class="edit">Save Changes</button>
+        </div>
+    </div>
+    <script src="JS/profile.js"></script>
+</body>
+
+</html>
